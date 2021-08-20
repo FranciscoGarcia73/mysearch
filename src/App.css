@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex-wrap: wrap;
 }
 
 .App-link {
@@ -34,5 +35,79 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  background-image: url(./components/images/cover.jpg);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.flex {
+  display: flex;
+}
+.box-search {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.serie,
+.actor {
+  padding: 10px;
+}
+
+.poster {
+  margin: 10px;
+  width: 300px;
+  height: 442px;
+}
+
+.encabezado {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 100px;
+}
+
+input:valid {
+  border: solid 1px green;
+}
+input:invalid {
+  border: solid 1px red;
+}
+
+.search-film {
+  width: 280px;
+  height: 25px;
+}
+
+@media (max-width: 480px) {
+  .box-search {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .encabezado {
+    font-size: 1rem;
+  }
+
+  .flex {
+    display: block;
   }
 }
