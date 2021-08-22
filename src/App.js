@@ -37,18 +37,6 @@ function App() {
   }
 
 
-  // useEffect (() => {
-  //   axios.get(`${api.filmBase}shows?q=${films}`)
-  //     .then((response) => {
-  //       console.log(response);
-  //       setDatos(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-    
-  // }, [films]);
-
   useEffect(() => {
     async function buscar(serie) {
       const response = await fetch(`${api.serieBase}shows?q=${serie}`, { method: "GET" });
